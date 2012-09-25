@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="util.GrupoDTO" table="Grupo">
+    <id name="id" column="id" type="int">
+        <generator class="native"></generator>
+    </id>
+    <property name="numero" column="numero" type="int"></property>
+    <property name="nombre" column="nombre" type="string"></property>
+    <property name="sigla" column="sigla" type="string"></property>
+    <property name="aula" column="aula" type="string"></property>
+    <property name="horario" column="horario" type="string"></property>
+	<property name="profesor" column="id_profesor" type="int"></property>
+</class>
+</hibernate-mapping>
